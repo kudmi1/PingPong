@@ -1,0 +1,67 @@
+#gameBoard {
+	border: 3px solid;
+	border-radius: 5px;
+	background-color: rgb(107, 179, 189);
+}
+
+#scoreText {
+    background-color: aliceblue;
+    border: 2px solid;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: fit-content;
+	font-size: 65px;
+	cursor: default;
+}
+
+
+[tooltip]::before {
+	position: absolute;
+	font-size: 20px;
+	right: 100%;
+	margin: 10px;
+	content: "*";
+}
+
+[tooltip] {
+	position: relative;
+}
+
+[tooltip]:hover::before {
+	content: "score of the game";
+	right: 100%;
+	width: max-content;
+	bottom: 30%;
+	font-size: 20px;
+	margin-left: 10px ;
+	padding: 8px;
+	background-color: lightseagreen;
+}
+
+#resetButton {
+	width: 200px;
+	height: 50px;
+	border: 2px solid;
+	font-family: "JetBrains Mono";
+	font-size: 25px;
+	font-weight: bold;
+    background-color: rgb(107, 179, 189);
+	border-radius: 5px;
+}
+
+#resetButton:hover {
+	transform: skew(9deg);
+    cursor: pointer;
+}
+
+.gameDiv {
+	font-family: "JetBrains Mono";
+	text-align: center;
+}
+
+body {
+	background-color: darkgoldenrod;
+}
